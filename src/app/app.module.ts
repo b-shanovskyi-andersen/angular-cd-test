@@ -8,6 +8,7 @@ import { A1Component } from './a1/a1.component';
 import { A2Component } from './a2/a2.component';
 import { B1Component } from './b1/b1.component';
 import { B2Component } from './b2/b2.component';
+import { ServiceWithoutInjectService } from './service-without-inject.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { B2Component } from './b2/b2.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ServiceWithoutInjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
